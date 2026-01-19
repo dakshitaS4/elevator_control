@@ -5,26 +5,41 @@ A simple OOP-based Python simulation of an elevator system that processes floor 
 📌 Key Features
 
 -Takes maximum floor of the building from user
+
 -Takes current elevator floor
+
 -Accepts multiple floor requests
+
 -Filters invalid and duplicate requests
+
 -Moves elevator one floor at a time
+
 -Calculates total time taken
+
 -Logs elevator movement using file handling
 
 📁 Project Structure
+
 elevator_control/
 ├── app.py                # Main controller
+
 ├── elevator_engine.py    # Elevator movement logic (OOPS)
+
 ├── request_manager.py    # Request validation & sorting
+
 ├── input_handler.py      # User input handling
+
 ├── validator.py          # Floor validation
+
 ├── activity_logger.py    # File logging
+
 └── README.md
 
 ▶️ How to Run
 git clone https://github.com/dakshitaS4/elevator_control.git
+
 cd elevator_control
+
 python app.py
 
 
@@ -46,5 +61,8 @@ Total time taken: 4 units
 🧠 OOPS Concepts Used
 
 Encapsulation – Elevator state and behavior inside classes
+
 Abstraction – Internal movement logic hidden from controller
+
 Single Responsibility Principle – Each module has one clear task
+
