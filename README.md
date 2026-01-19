@@ -21,6 +21,7 @@ A simple OOP-based Python simulation of an elevator system that processes floor 
 📁 Project Structure
 
 elevator_control/
+
 ├── app.py                # Main controller
 
 ├── elevator_engine.py    # Elevator movement logic (OOPS)
@@ -36,6 +37,7 @@ elevator_control/
 └── README.md
 
 ▶️ How to Run
+
 git clone https://github.com/dakshitaS4/elevator_control.git
 
 cd elevator_control
@@ -46,14 +48,21 @@ python app.py
 Make sure you run the command from the folder containing app.py.
 
 🧪 Sample Output
+
 Enter maximum floor of the building: 10
+
 Enter current floor: 2
+
 Enter floor requests separated by space: 5 6
 
 Elevator Movement:
+
 Reached floor 3
+
 Reached floor 4
+
 Reached floor 5
+
 Reached floor 6
 
 Total time taken: 4 units
