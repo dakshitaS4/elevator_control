@@ -45,12 +45,13 @@ from activity_logger import Logger
 
 def elevator_controller():
     MIN_FLOOR = 1
-    MAX_FLOOR = 10
 
+    max_floor = int(input("Enter maximum floor of the building: "))
     current_floor = int(input("Enter current floor: "))
+
     requests = input_handler()
 
-    manager = RequestManager(MIN_FLOOR, MAX_FLOOR)
+    manager = RequestManager(MIN_FLOOR, max_floor)
     processed_requests = manager.process_requests(requests)
 
     elevator = Elevator(current_floor)

@@ -8,3 +8,6 @@ Reached floor 8
 Reached floor 9
 Reached floor 10
 Total time taken: 8 units
+Reached floor 3
+Reached floor 4
+Total time taken: 2 units
