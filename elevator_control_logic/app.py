@@ -37,10 +37,10 @@
 
 
 
-from elevator_engine import Elevator
 from input_handler import input_handler
 from request_manager import RequestManager
-from elevator_control_logic.logger import Logger
+from elevator_engine import Elevator
+from activity_logger import Logger
 
 
 def elevator_controller():
@@ -56,17 +56,17 @@ def elevator_controller():
     elevator = Elevator(current_floor)
     logger = Logger()
 
+    print("\nElevator Movement:")
     for floor in processed_requests:
         elevator.move_to(floor)
-        logger.log(f"Moved to floor {floor}")
 
-    logger.log(f"Total time taken: {elevator.total_time}")
+    for step in elevator.movement_log:
+        print(f"Reached floor {step}")
+        logger.log(f"Reached floor {step}")
 
-    print("Elevator Movement:")
-    for floor in elevator.movement_log:
-        print(f"Reached floor {floor}")
+    print(f"\nTotal time taken: {elevator.total_time} units")
+    logger.log(f"Total time taken: {elevator.total_time} units")
 
-    print(f"\nTotal time taken: {elevator.total_time}")
 
 if __name__ == "__main__":
     elevator_controller()
