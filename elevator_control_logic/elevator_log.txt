@@ -22,3 +22,39 @@ Reached floor 8
 Reached floor 9
 Reached floor 10
 Total time taken: 10 units
+Reached floor 1
+Reached floor 2
+Reached floor 3
+Reached floor 4
+Reached floor 5
+Reached floor 6
+Reached floor 7
+Reached floor 8
+Reached floor 9
+Reached floor 10
+Reached floor 11
+Reached floor 12
+Reached floor 13
+Total time taken: 13 units
+Reached floor 4
+Reached floor 3
+Reached floor 2
+Reached floor 1
+Reached floor 2
+Reached floor 3
+Reached floor 4
+Reached floor 5
+Reached floor 6
+Reached floor 7
+Reached floor 8
+Reached floor 9
+Reached floor 10
+Reached floor 11
+Reached floor 12
+Reached floor 13
+Reached floor 14
+Reached floor 15
+Reached floor 16
+Reached floor 17
+Reached floor 18
+Total time taken: 21 units

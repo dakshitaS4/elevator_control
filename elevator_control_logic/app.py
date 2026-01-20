@@ -39,8 +39,8 @@
 
 from input_handler import input_handler
 from request_manager import RequestManager
-from elevator_engine import Elevator
-from activity_logger import Logger
+from elevator_engine import Elevator, HighSpeedElevator
+from activity_logger import FileLogger, ConsoleLogger
 
 
 def elevator_controller():
@@ -54,8 +54,13 @@ def elevator_controller():
     manager = RequestManager(MIN_FLOOR, max_floor)
     processed_requests = manager.process_requests(requests)
 
+    # Polymorphism: switch elevator type without changing logic
     elevator = Elevator(current_floor)
-    logger = Logger()
+    # elevator = HighSpeedElevator(current_floor)
+
+    # Polymorphism: switch logger type
+    logger = FileLogger()
+    # logger = ConsoleLogger()
 
     print("\nElevator Movement:")
     for floor in processed_requests:
@@ -71,3 +76,4 @@ def elevator_controller():
 
 if __name__ == "__main__":
     elevator_controller()
+
